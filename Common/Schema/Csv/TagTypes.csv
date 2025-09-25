@@ -1,0 +1,112 @@
+Version,Branch,Level,Name,Number,Interfaces,Class GUID,Enum GUID,Display Name,Description,Edge Definition to Context,Context Definition,Correlation Rules,Design Components,Use for Scoping,Rel Path to Group,Precedence Category
+5,,1,AnalysisBaseObject,3000,IAnalysisBaseObject,,{e7f7c0b8-834c-412c-b9d5-18228fba78c4},Analysis Base Object,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisLineElement,3001,IAnalysisLineElement,4723dd0d-97ba-4a72-83ed-f878b7b47aff,{5c37e8b4-ddaa-429c-904c-fbc403ac9b98},Analysis Line Element,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisPipe,3002,IAnalysisPipe,27995205-3d7d-44a6-aa89-a4cee9203009,{809c241e-996f-4dd6-9c9b-e1f92b52b4b6},Analysis Pipe,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisBend,3003,IAnalysisBend,348e94c9-4462-45e7-99a4-9fa889a9008c,{a490ddf7-bd85-492e-a46a-4cde475570aa},Analysis Bend,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisReducer,3004,IAnalysisReducer,8038aa1d-ed8e-4d73-9930-ca80c8cf704b,{933dc705-65a0-46b4-b3ff-f37eaeed8876},Analysis Reducer,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisExpansionJoint,3005,IAnalysisExpansionJoint,{e4e6d15a-74da-4c2c-8131-388d08e982ca},{1ea55221-ee70-428f-a52d-d1e0e104d203},Analysis Expansion Joint,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisRigid,3006,IAnalysisRigid,{27216c9b-a204-44ef-92c1-f13bc7fe4ba2},{d8099482-6d67-44ae-9e19-0c9d21ebd240},Analysis Rigid,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisNode,3007,"IAnalysisNode, ILocation",fbf0903f-608d-407c-8c6b-969ce218d3f5,{9d984e21-b0e9-4d57-9702-e4db6749b892},Analysis Node,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisMaterial,3030,IAnalysisMaterial,,{1257322a-a44c-48e5-b82a-3a8dfb4c1317},Analysis Material Allowable,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableASME,3031,IAnalysisMaterialAllowableASME,,{f525ae47-7828-434a-a98d-7300b4b4221f},Analysis Material Allowable ASME,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableB31,3032,IAnalysisMaterialAllowableB31,,{e3f49cb1-a552-4b4a-a62b-7bd679e190dc},Analysis Material Allowable B31,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableEN,3332,IAnalysisMaterialAllowableEN,,{e3f49cb1-a552-4b4a-a62b-7bd679e190dc},Analysis Material Allowable B31,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableBS7159,3033,IAnalysisMaterialAllowableBS7159,,{1d5136a6-2e2e-40ed-82a0-3f4aaa8c7d90},Analysis Material Allowable BS7159,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableBS806,3034,IAnalysisMaterialAllowableBS806,,{07a17475-e6f4-4da3-b77d-4f90d625bfd4},Analysis Material Allowable BS806,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableCANZ662,3035,IAnalysisMaterialAllowableCANZ662,,{02e72dbf-31fa-45b7-92be-7b41bae699c4},Analysis Material Allowable CANZ662,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableCODETI,3036,IAnalysisMaterialAllowableCODETI,,{7e5b6e1a-b20b-4a90-a6bb-2da0786216bb},Analysis Material Allowable CODETI,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableDNV,3037,IAnalysisMaterialAllowableDNV,,{429ea9e2-f415-4d7f-a67b-5099bee764ed},Analysis Material Allowable DNV,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableFDBR,3039,IAnalysisMaterialAllowableFDBR,,{83dea1ae-62f4-4d61-a2d4-5fe76a59e7e1},Analysis Material Allowable FDBR,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableGPTCZ380,3040,IAnalysisMaterialAllowableGPTCZ380,,{0fadf2f2-c3be-43cc-aaed-7ed3454ad322},Analysis Material Allowable GPTCZ380,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableHPSGL,3041,IAnalysisMaterialAllowableHPSGL,,{b82a8678-1ce8-426a-928c-c0eaf12f4b2a},Analysis Material Allowable HPSGL,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableISO146922005,3042,IAnalysisMaterialAllowableISO146922005,,{7457105a-712e-4f92-8aea-ce0f6f8bf99f},Analysis Material Allowable ISO 14692 2005,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableISO146922017,3043,IAnalysisMaterialAllowableISO146922017,,{6e9ff66d-ecf7-4869-b3c4-93feabf17b18},Analysis Material Allowable ISO 14692 2017,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableJPI,3044,IAnalysisMaterialAllowableJPI,,{877edd77-1f3b-45a8-9e33-2f76e6266f5d},Analysis Material Allowable JPI,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableNavy505,3045,IAnalysisMaterialAllowableNavy505,,{c7ac7b62-d90a-432d-ba68-be334140b7e8},Analysis Material Allowable Navy,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableNorwegianTBK6,3046,IAnalysisMaterialAllowableNorwegianTBK6,,{84b1a474-24f3-4343-8ebc-a6dfa2751888},Analysis Material Allowable Norwegian TBK6,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowablePD8010,3047,IAnalysisMaterialAllowablePD8010,,{66cffa4c-3484-46df-aa4b-f3bbb9755e1c},Analysis Material Allowable PD8010,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableRCCMCD,3048,IAnalysisMaterialAllowableRCCMCD,,{294eeaec-71d0-403f-b041-44e9ed13e776},Analysis Material Allowable RCCMCD,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableStoomwezen,3049,IAnalysisMaterialAllowableStoomwezen,,{1dfb3d0c-ae2c-4950-9d1f-9cbca60462ee},Analysis Material Allowable Stoomwezen,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableSwedishPowerCodeMethod1,3050,IAnalysisMaterialAllowableSwedishPowerCodeMethod1,,{bb8b1824-440a-4269-be59-994d606a3ce6},Analysis Material Allowable Swedish Power Code Method 1,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableSwedishPowerCodeMethod2,3051,IAnalysisMaterialAllowableSwedishPowerCodeMethod2,,{c02be711-a2bf-476d-962b-16cb3c5757ea},Analysis Material Allowable Swedish Power Code Method 2,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableTD12,3052,IAnalysisMaterialAllowableTD12,,{fdba5ed8-f6aa-4320-b36f-f9c51dfa66d6},Analysis Material Allowable TD12,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisMaterialAllowableUKOOA,3053,IAnalysisMaterialAllowableUKOOA,,{0efecbcf-c619-4460-8633-413bcd5a00bb},Analysis Material Allowable UKOOA,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisFlangeCheckPressureRating,22020,IAnalysisFlangeCheckPressureRating,,{f5c8e8a8-0412-429d-b28e-1bc71d693007},Analysis Flange Check Pressure Rating,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisFlangeCheckYieldStrength,22030,IAnalysisFlangeCheckYieldStrength,,{f309cd2c-ec49-4286-9dd5-154d919881db},AnalysisFlange Check Yield Strength,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisFlangeCheck,22000,IAnalysisFlangeCheck,,{3b17be16-5360-4f6e-bfdc-0b5e0a9951d2},Analysis Flange Check,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisFlangeCheckNC,22010,IAnalysisFlangeCheckNC,,{5bf277a2-d657-4937-9d48-150eab366ac9},Analysis Flange Check ASME,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisFlangeCheckPeq,22020,IAnalysisFlangeCheckPeq,,{6e3ccbe5-f058-4758-896b-2f9cf2962c7d},Analysis Flange Check Kellogg,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisNodeAuxiliary,20000,IAnalysisNodeAuxiliary,{ae971d8f-8dd0-4bb4-8086-a601caf00714},{3e77615b-af72-4a77-b04c-c301895b9179},Analysis Node Auxiliary,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisAppliedPointForce,20010,"IAnalysisPointLoad, IAnalysisVectorAuxiliary, IAnalysisAppliedPointForce",4e333413-6443-40a8-a33d-ef02b7221dc4,{585cdcea-4cd2-44e6-a387-d799c507b38e},Analysis Applied Point Force,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisSupport,20060,IAnalysisSupport,{f8ab29cf-14c4-4a81-8ace-60122417e132},{653f1ec1-9f6a-40c0-b756-f2406a3d8c69},Analysis Support,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisRestraint,20070,IAnalysisRestraint,4aea8a4d-f646-44d3-b62a-d7e9da9f28e7,{42c7860b-6f7e-4523-84ce-d758b6147fd5},Analysis Restraint,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisHanger,20080,"IAnalysisHanger, IAnalysisHangerShared",6ba4c166-a939-4489-a1f6-1c00c14eb9e5,{5478b26d-4cce-4a22-92ca-8733169b76bf},Analysis Hanger,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisDisplacement,20090,"IAnalysisDisplacement, IAnalysisVectorAuxiliary, IAnalysisDisplacementInput",0ea24047-42ca-4190-a923-5102c1d10df1,{71e4fe06-dd24-42cb-992e-1cfcc7d55869},Analysis Displacement,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisNozzleFlex,20100,IAnalysisNozzleFlex,{e1b10b82-857c-4bf9-884a-f169492d69bb},{e1b10b82-857c-4bf9-884a-f169492d69bb},Analysis Nozzle Flex,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisNozzleFlexWRC297,20110,"IAnalysisNozzleFlexWRC297, IAnalysisNozzleFlexDetails",{5cddb295-9340-44f6-aac2-770a22657272},{5cddb295-9340-44f6-aac2-770a22657272},Analysis Nozzle Flex WRC297,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisNozzleFlexAPI650,20120,IAnalysisNozzleFlexAPI650,{f30d08a0-a369-46eb-8aae-e668c1905ca3},{f30d08a0-a369-46eb-8aae-e668c1905ca3},Analysis Nozzle Flex API650,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisNozzleFlexPD5500,20130,"IAnalysisNozzleFlexPD5500, IAnalysisNozzleFlexDetails",{cf5d8533-af5d-49de-bc6e-500258e80aea},{cf5d8533-af5d-49de-bc6e-500258e80aea},Analysis Nozzle Flex PD5500,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisNozzleFlexCustom,20140,IAnalysisNozzleFlexCustom,{388e778f-2cda-49ea-b100-aea9cd8e79b3},{388e778f-2cda-49ea-b100-aea9cd8e79b3},Analysis Nozzle Flex Custom,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisNodeAuxiliaryOutput,20500,"IOutput, IAnalysisNodeAuxiliaryOutput",,{e8587e8c-0adb-4d6e-8022-e6ec3d71763e},Analysis Node Auxiliary Output,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisComponentStressOutput,20501,"IAnalysisStress, IAnalysisComponentStress",,{99880440-7f1d-4242-a443-03f859a06b37},Analysis Stresses Output Report,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisDNVComponentsOutput,20503,"IAnalysisDNVComponentsOutput, IAnalysisDNVCommonOutput",,{23f37389-9e0e-4e73-8ab3-ae1996354c7c},Analysis DNV Components Output,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisDNVDetailsOutput,20503,IAnalysisDNVDetailsOutput,,{885896ee-a379-468c-bdf5-965a42884e34},Analysis DNV Details Output,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisDNVThicknessOutput,20503,"IAnalysisDNVThicknessOutput, IAnalysisDNVCommonOutput",,{b8ce3db1-1c16-4faa-b0a4-99cfec079377},Analysis DNV Thickness Output,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisDisplacementOutput,20502,"IOutput, IAnalysisNodeAuxiliaryOutput, IAnalysisDisplacement",,{f95ff858-7bc4-4cb1-a787-b0c42a0f5868},Analysis Displacement Output,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisNozzleLimitCheckOutput,20502,"IAnalysisNodeAuxiliaryOutput, IAnalysisNozzleLimitCheckOutput, IAnalysisNozzleLimitCheck",,{307c8e60-852a-49d8-9f01-dc51acc41c7b},Analysis Nozzel Limit Check  Output,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisForceMomentOutput,20503,"IAnalysisNodeAuxiliaryOutput, IAnalysisPointLoad",,{f31b45a1-1597-4ea8-8aaf-35b777fc6b72},Analysis Force Moment Output,,,,,PipeStressAnalysis,,,Analysis
+5,,5,AnalysisGlobalForceMoments,20504,"IAnalysisGlobalForceMoments, IAnalysisPointLoad",,{cfe71f22-adad-4f19-abbc-4288f5a6969d},Analysis Global Force Moments,,,,,PipeStressAnalysis,,,Analysis
+5,,5,AnalysisLocalForceMoments,20505, IAnalysisPointLoad,,{6e1695d8-7511-4d84-8fe0-5e95f0df8255},Analysis Local Force Moments,,,,,PipeStressAnalysis,,,Analysis
+5,,5,AnalysisGlobalRestraintReaction,20506,"IAnalysisRestraintReaction, IAnalysisPointLoad",,{60035119-e07e-447b-8192-019e21628462},Analysis Global Restraint Reaction,,,,,PipeStressAnalysis,,,Analysis
+5,,5,AnalysisLocalRestraintReaction,20507,"IAnalysisRestraintReaction, IAnalysisPointLoad",,{761d4f3e-fa5c-431b-9b74-dd4c6fafa25b},Analysis Local Restraint Reaction,,,,,PipeStressAnalysis,,,Analysis
+5,,4,AnalysisHangerReport,21000,"IAnalysisHangerReport, IAnalysisHangerShared",,{04beaa3b-cd48-4740-9c07-c274fb3df665},Analysis Hanger Report,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisNozzleLimitCheck,23000,"IAnalysisNozzleLimitCheck, IAnalysisLocalForceMoments",,{270e9a46-c220-4ac3-919a-08957a3f30d1},Analysis Nozzle Limit Check,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisLoadCase,3050,IAnalysisLoadCase,c340e954-0b88-4d2e-9110-077f7e4a4799,{cc760a60-843c-4634-a2d8-2fa7a2d1f765},Analysis Load Case,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisLoadCaseComponent,3050,,c340e954-0b88-4d2e-9110-077f7e4a4799,{cc760a60-843c-4634-a2d8-2fa7a2d1f765},Analysis Load Case,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisLoadCaseDefinition,3050,,c340e954-0b88-4d2e-9110-077f7e4a4799,{cc760a60-843c-4634-a2d8-2fa7a2d1f765},Analysis Load Case,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisWaveLoad,3050,"IAnalysisVectorAuxiliary, IAnalysisWaveLoad",c340e954-0b88-4d2e-9110-077f7e4a4799,{cc760a60-843c-4634-a2d8-2fa7a2d1f765},Analysis Load Case,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisWindLoad,3050,IAnalysisVectorAuxiliary,c340e954-0b88-4d2e-9110-077f7e4a4799,{cc760a60-843c-4634-a2d8-2fa7a2d1f765},Analysis Load Case,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisWindCaseASCE7_2005,3050,"IAnalysisWindCaseASCE7, IAnalysisWindCaseASCE7_2022",,,AnalysisWindCaseASCE7_2005 ,,,,,,,,
+5,,3,AnalysisWindCaseASCE7_2010,3050,"IAnalysisWindCaseASCE7, IAnalysisWindCaseASCE7_2022",,,AnalysisWindCaseASCE7_2010 ,,,,,,,,
+5,,3,AnalysisWindCaseASCE7_2016,3050,"IAnalysisWindCaseASCE7, IAnalysisWindCaseASCE7_2022, IAnalysisWindCaseASCE7_2016",,,AnalysisWindCaseASCE7_2016 ,,,,,,,,
+5,,3,AnalysisWindCaseASCE7_2022,3050,"IAnalysisWindCaseASCE7_2022, IAnalysisWindCaseASCE7_2016",,,AnalysisWindCaseASCE7_2022 ,,,,,,,,
+5,,3,AnalysisWindCaseAustralia1170_2002,3050,IAnalysisWindCaseAS_NZS_1170,,,AnalysisWindCaseAustralia1170_2002 ,,,,,,,,
+5,,3,AnalysisWindCaseBrazilNBR6123_1988,3050,IAnalysisWindCaseBrazilNBR6123,,,AnalysisWindCaseBrazilNBR6123_1988 ,,,,,,,,
+5,,3,AnalysisWindCaseBS6399_1997,3050,IAnalysisWindCaseBS6399,,,AnalysisWindCaseBS6399_1997 ,,,,,,,,
+5,,3,AnalysisWindCaseChinaGB50009_2002,3050,IAnalysisWindCaseChinaGB50009,,,AnalysisWindCaseChinaGB50009_2002 ,,,,,,,,
+5,,3,AnalysisWindCaseChinaGB50009_2012,3050,IAnalysisWindCaseChinaGB50009,,,AnalysisWindCaseChinaGB50009_2012 ,,,,,,,,
+5,,3,AnalysisWindCaseEurope1991_2005,3050,IAnalysisWindCaseEurope1991,,,AnalysisWindCaseEurope1991_2005 ,,,,,,,,
+5,,3,AnalysisWindCaseIBC_2006,3050,"IAnalysisWindCaseASCE7_2022, IAnalysisWindCaseASCE7",,,AnalysisWindCaseIBC_2006 ,,,,,,,,
+5,,3,AnalysisWindCaseIBC_2012,3050,"IAnalysisWindCaseASCE7_2022, IAnalysisWindCaseASCE7",,,AnalysisWindCaseIBC_2012 ,,,,,,,,
+5,,3,AnalysisWindCaseIBC_2018,3050," IAnalysisWindCaseASCE7_2022, IAnalysisWindCaseASCE7_2016, IAnalysisWindCaseASCE7",,,AnalysisWindCaseIBC_2018 ,,,,,,,,
+5,,3,AnalysisWindCaseIBC_2021,3050,"IAnalysisWindCaseASCE7_2022, IAnalysisWindCaseASCE7_2016, IAnalysisWindCaseASCE7",,,AnalysisWindCaseIBC_2021 ,,,,,,,,
+5,,3,AnalysisWindCaseIBC_2024,3050,"IAnalysisWindCaseASCE7_2022, IAnalysisWindCaseASCE7_2016, IAnalysisWindCaseASCE7",,,AnalysisWindCaseIBC_2024 ,,,,,,,,
+5,,3,AnalysisWindCaseIS875_1998,3050,IAnalysisWindCaseIS875_1998,,,AnalysisWindCaseIS875_1998 ,,,,,,,,
+5,,3,AnalysisWindCaseMexico_1993,3050,IAnalysisWindCaseMexico_1993,,,AnalysisWindCaseMexico_1993 ,,,,,,,,
+5,,3,AnalysisWindCaseNBC_2005,3050,"IAnalysisWindCaseNBC_2005, IAnalysisWindCaseNBC",,,AnalysisWindCaseNBC_2005 ,,,,,,,,
+5,,3,AnalysisWindCaseNBC_2015,3050,"IAnalysisWindCaseNBC_2015, IAnalysisWindCaseNBC",,,AnalysisWindCaseNBC_2015 ,,,,,,,,
+5,,3,AnalysisWindCasePressureVsElevation,3050,,,,AnalysisWindCasePressureVsElevation ,,,,,,,,
+5,,3,AnalysisWindCaseUBC_1997,3050,IAnalysisWindCaseUBC,,,AnalysisWindCaseUBC_1997 ,,,,,,,,
+5,,3,AnalysisWindCaseVelocityVsElevation,3050,,,,AnalysisWindCaseVelocityVsElevation ,,,,,,,,
+5,,2,AnalysisPrimitive,3051,IAnalysisPrimitive,,,Analysis Load Case Component,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisVectorAuxiliary,3054,IAnalysisVectorAuxiliary,,,AnalysisVectorAuxiliary,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisAppliedPointForceVector,3055,,,,AnalysisAppliedPointForceVector,,,,,PipeStressAnalysis,,,Analysis
+5,,3,AnalysisDisplacementVector,3056,"AnalysisDisplacementVector, IAnalysisVectorAuxiliary",,,AnalysisDisplacementVector,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisProcessInfoDataSet,3060,"IAnalysisProcessInfoDataSet, IAnalysisRunAuxiliary, IAnalysisVectorAuxiliary",4a959f54-0215-4259-bd32-39f22839253b,{4deac3d0-bf92-4372-9278-92fb237a4325},Analysis Process Info,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisUniformLoadDataSet,3061,"IAnalysisUniformLoadDataSet, IAnalysisRunAuxiliary, IAnalysisVectorAuxiliary",03437aff-7d59-4aef-b5c7-031325ebdf7e,{03437aff-7d59-4aef-b5c7-031325ebdf7e},Analysis Uniform Load,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisPipeProperty,23000,IAnalysisPipeProperty,,{8c3437da-aac8-4ef2-a9db-a6a51ccb13b6},Analysis Pipe Properties,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisDensities,23000,IAnalysisDensities,,{efe25947-1965-4e40-81ca-8508b32cbe5c},Analysis Densities,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisElementOffset,24500,IAnalysisElementOffset,,{2kdoda2f-769b-4f97-925a-2d1efb3fbcc6},Analysis Element Offset,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisWind,24000,IAnalysisWind,,{2cadda2f-769b-4f97-925a-2d1efb3fbcc6},Analysis Wind ,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisWave,25000,IAnalysisWave,,{ea48802c-4ea8-4130-b174-fc87e1d45660},Analysis Wave ,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisModelOrganization,23100,"IAnalysisModelOrganization, IAnalysisGraphics",,{01ad8daa-fca0-4796-91e0-2ffb06db1828},Analysis Model Organization,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisMaterialAllowableDataSet,24000,IAnalysisMaterialAllowableDataSet,,{682bad39-0247-4b48-96cb-df3bf1f5ed97},Analysis Hot Stress,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisMaterialFatigueDataSet,26000,IAnalysisMaterialFatigueDataSet,,{0cc8a384-0203-40de-9558-23a9a2b31afa},Analysis Material Fatigue Data,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisFlangeCheckNCOutput,26010,"IAnalysisFlangeCheckNCOutput, IAnalysisFlangeOutput, IAnalysisNodeAuxiliary, IAnalysisNodeAuxiliaryOutput",,{e4b25ac1-bfe2-4a1c-9cb3-a347c6758f38},Analysis Flange NC.3658.3,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisFlangeCheckPeqOutput,26020,"IAnalysisFlangeCheckPeqOutput, IAnalysisFlangeOutput, IAnalysisNodeAuxiliary, IAnalysisNodeAuxiliaryOutput",,{d36fd00e-fa61-4b19-a5f2-7973428baa69},Analysis Flange Peq,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisSIFNoTee,27000,IAnalysisSIFNoTee,,{12549f79-8fe6-415b-8ecf-e6ffed8263f0},Analysis SIF No Tee,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisSpecialJoint,27010,IAnalysisSpecialJoint,,{a06ceaef-2d57-4a07-bf8d-689b22dcfa96},Analysis Special Joint,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisSIFUserDefinedData,27020,"IAnalysisSIFBaseData, IAnalysisSIFUserDefinedData, IAnalysisSIFData",,{60858a04-b8f1-43a4-867b-03e557b40096},Analysis SIF User Defined Data,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisSIFFitting,27030,"IAnalysisSIFFitting, IAnalysisB31JTee, IAnalysisCommonTee, IAnalysisTD12Tee",1dd50639-06c8-427c-8885-30d7276ea3ae,{39ea9d8b-273b-47ab-b08a-d61b4d7b6d68},Analysis SIF Fitting,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisSIFOutput,27040,"IAnalysisSIFBaseData, IAnalysisSIFOutput, IAnalysisSIFData",,{c9a50e15-d7f7-4750-a840-0aa6bcc36eac},Analysis SIF Output,,,,,PipeStressAnalysis,,,Analysis
+5,,2,AnalysisSIFFittingOutput,27050,IAnalysisSIFFittingOutput,,{519aa1e7-0f82-4b07-bc41-ddabfe8efe5b},Analysis SIF Fitting Output,,,,,PipeStressAnalysis,,,Analysis

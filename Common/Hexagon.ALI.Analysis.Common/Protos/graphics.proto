@@ -1,0 +1,128 @@
+syntax = "proto3";
+
+option csharp_namespace = "Hexagon.ALI.Analysis.Common.Graphic";
+
+package graphics;
+
+// The graphics service definition.
+service Graphics {
+
+  rpc CreatePipe (PipeRequest) returns (GReply);
+  rpc CreateReducer (ReducerRequest) returns (GReply);
+  rpc CreateBend (BendRequest) returns (GReply);
+  rpc CreateRestraint (RestraintRequest) returns (GReply);
+  rpc CreateRODRestraint (RODRestraintRequest) returns (GReply);
+
+  rpc PushGraphics (PushGraphicsRequest) returns (StatusReply);
+  rpc RemoveGraphics (RemoveGraphicsRequest) returns (StatusReply);
+  rpc CleanLocalGraphics (Empty) returns (StatusReply);
+}
+
+// an empty message
+message Empty{
+
+}
+
+// The request message containing input to create pipe
+message PipeRequest {
+  double X1 = 1;
+  double Y1 = 2;
+  double Z1 = 3;
+
+  double X2 = 4;
+  double Y2 = 5;
+  double Z2 = 6;
+  
+  double Diam = 7;
+  bool Cap = 8;
+}
+
+// The request message containing input to create reducer
+message ReducerRequest {
+  double X1 = 1;
+  double Y1 = 2;
+  double Z1 = 3;
+  
+  double X2 = 4;
+  double Y2 = 5;
+  double Z2 = 6;
+  
+  double R1 = 7;
+  double R2 = 8;
+  
+  bool Cap = 9;
+}
+
+// The request message containing input to create bend
+message BendRequest {
+  double X1 = 1;
+  double Y1 = 2;
+  double Z1 = 3;
+  
+  double X2 = 4;
+  double Y2 = 5;
+  double Z2 = 6;
+  
+  double X3 = 7;
+  double Y3 = 8;
+  double Z3 = 9;
+
+  double X4 = 10;
+  double Y4 = 11;
+  double Z4 = 12;
+
+  double BendRadius = 13;
+  double Diam = 14;
+}
+
+// The request message containing input to create restraint
+message RestraintRequest {
+  double X = 1;
+  double Y = 2;
+  double Z = 3;
+
+  double A = 4;
+  double B = 5;
+  double C = 6;
+  
+  double Gap = 7;
+  double Ssf = 8;
+  bool RotationalRes = 9;
+  bool Stiff = 10;
+}
+
+// The request message containing input to create rod restraint
+message RODRestraintRequest {
+  double X = 1;
+  double Y = 2;
+  double Z = 3;
+
+  double A = 4;
+  double B = 5;
+  double C = 6;
+
+  double RodLength = 7;
+  double Gap = 8;
+  double Ssf = 9;
+  bool Stiff = 10;
+}
+
+// The response message containing the pipe stream
+message GReply {
+  string GId = 1;
+  bytes GStream = 2;
+}
+
+message PushGraphicsRequest{
+  string PlantId = 1;
+  string PlantName = 2;
+  map<string,bytes> GraphicsStreams = 3;
+}
+
+message RemoveGraphicsRequest{
+  string PlantId = 1;
+}
+
+message StatusReply{
+  bool Status = 1;
+}

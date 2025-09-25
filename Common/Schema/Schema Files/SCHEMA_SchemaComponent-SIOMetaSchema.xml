@@ -1,0 +1,343 @@
+﻿<Container  CompSchema="MetaSchema" Scope="Schema"  IObject_ContainerID="SchemaComponent.SchemaComponent" IObject_OBID="Auto" IObject_CreationDate="Now" IObject_TerminationDate="9999/12/31-23:59:59:999" IObject_LastUpdatedDate="Now" IObject_CreationUser="superuser" IObject_DomainUID="Auto" IObject_UniqueKey="Auto" IRel_DomainUID1="Auto" IRel_DomainUID2="Auto">
+  <InterfaceDef>
+    <IObject UID="IDenormInfo" Name="IDenormInfo" Description="Interface for Denormalization Info" />
+    <IInterfaceDef/>
+    <IInterfaceRole/>
+    <IPropCategory PropCategory="Miscellaneous"/>
+    <IEnumMetadata/>
+    <ISchemaObj DisplayName="Denormalization Info" SchemaRevVer="04.00.00" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="IDenormInfoImpliesIObject"/>
+    <IRel UID1="IDenormInfo" UID2="IObject" DefUID="Implies" IsRequired="True"/>
+    <ISchemaObj SchemaRevVer="04.00.00"/>
+  </Rel>
+  <Rel>
+    <IObject UID="InterfaceDef.IDenormInfo" Name="InterfaceDef.IDenormInfo" />
+    <IRel UID1="InterfaceDef" UID2="IDenormInfo" DefUID="Realizes" OrderValue="110" />
+    <ISchemaObj SchemaRevVer="04.00.00"/>
+  </Rel>
+  <Rel>
+    <IObject UID="IInterfaceDefImpliesIDenormInfo"/>
+    <IRel UID1="IInterfaceDef" UID2="IDenormInfo" DefUID="Implies" />
+    <ISchemaObj SchemaRevVer="04.00.00"/>
+  </Rel>
+  <PropertyDef>
+    <IObject UID="DenormInfo" Name="DenormInfo" Description="Property for Denormalization Info" />
+    <IPropertyDef/>
+    <ISchemaObj DisplayName="Denormalization Info" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <PropertyDef>
+    <IObject UID="DenormEdges" Name="DenormEdges" Description="Property for Denormalization Edges"/>
+    <IPropertyDef/>
+    <ISchemaObj DisplayName="Denormalization Rel Edges" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="IDenormInfoExposesDenormInfo"/>
+    <IRel UID1="IDenormInfo" UID2="DenormInfo" DefUID="Exposes" OrderValue="20" IsRequired="True"/>
+    <ISchemaObj SchemaRevVer="04.00.00"/>
+  </Rel>
+  <Rel>
+    <IObject UID="IDenormInfoExposesDenormEdges"/>
+    <IRel UID1="IDenormInfo" UID2="DenormEdges" DefUID="Exposes" OrderValue="30" IsRequired="True"/>
+    <ISchemaObj SchemaRevVer="04.00.00"/>
+  </Rel>
+  <Rel>
+    <IObject UID="DenormInfoScopedByString"/>
+    <IRel UID1="DenormInfo" UID2="string" DefUID="ScopedBy" />
+    <ISchemaObj SchemaRevVer="04.00.00"/>
+  </Rel>
+  <Rel>
+    <IObject UID="DenormEdgesScopedByString"/>
+    <IRel UID1="DenormEdges" UID2="string" DefUID="ScopedBy" />
+    <ISchemaObj SchemaRevVer="04.00.00"/>
+  </Rel>
+  <!-- new Precedence categories Any and Identity -->
+  <EnumEnum>
+    <IObject UID="Identity" Name="Identity" Description="Identity"/>
+    <ISchemaObj SchemaRevVer="2.2.2.7"/>
+    <IEnumEnum EnumNumber="1"/>
+  </EnumEnum>
+  <Rel>
+    <IObject UID="PrecedenceContainsIdentity"/>
+    <IRel UID1="PrecedenceCategories" UID2="Identity" DefUID="Contains"/>
+    <ISchemaObj SchemaRevVer="2.2.2.7"/>
+  </Rel>
+  <EnumEnum>
+    <IObject UID="Any" Name="Any" Description="Any"/>
+    <ISchemaObj SchemaRevVer="2.2.2.7"/>
+    <IEnumEnum EnumNumber="99"/>
+  </EnumEnum>
+  <Rel>
+    <IObject UID="PrecedenceContainsAny"/>
+    <IRel UID1="PrecedenceCategories" UID2="Any" DefUID="Contains"/>
+    <ISchemaObj SchemaRevVer="2.2.2.7"/>
+  </Rel>
+  <!--NamingRule -->
+<ClassDef>
+  <IObject UID="NamingRule" Name="NamingRule" Description="NamingRule"/>
+  <IClassDef/>
+  <ISchemaObj DisplayName="Naming rule" SchemaRevVer="04.00.00"/>
+</ClassDef>
+<ClassDef>
+  <IObject UID="NamingRuleProp" Name="NamingRuleProp" Description="NamingRule Property" />
+  <IClassDef/>
+  <ISchemaObj DisplayName="Naming rule property" SchemaRevVer="04.00.00"/>
+</ClassDef>
+<Rel>
+  <IObject UID="GraphTypesInstancesNamingRule"/>
+  <IRel UID1="GraphTypesFactory" UID2="NamingRule" DefUID="Instantiates"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="GraphTypesInstancesNamingRuleProp"/>
+  <IRel UID1="GraphTypesFactory" UID2="NamingRuleProp" DefUID="Instantiates"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="MetaModel.NamingRule"/>
+  <IRel UID1="MetaModel" UID2="NamingRule" DefUID="ModelClass"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="MetaModel.NamingRuleProp"/>
+  <IRel UID1="MetaModel" UID2="NamingRuleProp" DefUID="ModelClass"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="MetaSchema.NamingRule"/>
+  <IRel UID1="MetaSchema" UID2="NamingRule" DefUID="Componentization"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="MetaSchema.NamingRuleProp"/>
+  <IRel UID1="MetaSchema" UID2="NamingRuleProp" DefUID="Componentization"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingRule.IObject"/>
+  <IRel UID1="NamingRule" UID2="IObject" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingRule.INamingRule"/>
+  <IRel UID1="NamingRule" UID2="INamingRule" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingRule.Primary.INamingRule"/>
+  <IRel UID1="NamingRule" UID2="INamingRule" DefUID="PrimaryInterface"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingRuleProp.Primary.INamingRuleProp"/>
+  <IRel UID1="NamingRuleProp" UID2="INamingRuleProp" DefUID="PrimaryInterface"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+  </Rel>
+<Rel>
+  <IObject UID="NamingRule.Realizes.ISchemaObj"/>
+  <IRel UID1="NamingRule" UID2="ISchemaObj" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingRulePropRealizesIObject"/>
+  <IRel UID1="NamingRuleProp" UID2="IObject" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingRulePropRealizesINamingRuleProp"/>
+  <IRel UID1="NamingRuleProp" UID2="INamingRuleProp" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingRulePropRealizesISchemaObj"/>
+  <IRel UID1="NamingRuleProp" UID2="ISchemaObj" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRulePropImpliesISchemaObj"/>
+  <IRel UID1="INamingRuleProp" UID2="ISchemaObj" DefUID="Implies" IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRuleImpliesISchemaObj"/>
+  <IRel UID1="INamingRule" UID2="ISchemaObj" DefUID="Implies" IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRuleImpliesIObject"/>
+  <IRel UID1="INamingRule" UID2="IObject" DefUID="Implies" IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<InterfaceDef>
+  <IObject UID="INamingRule" Name="INamingRule" Description="NamingRule Interface"/>
+  <IInterfaceDef/>
+  <IInterfaceRole/>
+  <IPropCategory PropCategory="Miscellaneous"/>
+  <IEnumMetadata/>
+  <ISchemaObj DisplayName="Naming rule" SchemaRevVer="04.00.00"/>
+</InterfaceDef>
+<InterfaceDef>
+  <IObject UID="INamingRuleProp" Name="INamingRuleProp" Description="NamingRuleProp Interface"/>
+  <IInterfaceDef/>
+  <IInterfaceRole/>
+  <IPropCategory PropCategory="Miscellaneous"/>
+  <IEnumMetadata/>
+  <ISchemaObj DisplayName="Naming rule property" SchemaRevVer="04.00.00"/>
+</InterfaceDef>
+<PropertyDef>
+  <IObject UID="NamingRuleEdges" Name="NamingRuleEdges" Description="NamingRule Edges" />
+  <IPropertyDef/>
+  <ISchemaObj DisplayName="Rel Edges for Naming Rule" SchemaRevVer="04.00.00"/>
+</PropertyDef>
+<PropertyDef>
+  <IObject UID="NamedObjectType" Name="NamedObjectType" Description="NamedObjectType"/>
+  <IPropertyDef/>
+  <ISchemaObj DisplayName="NamedObjectType" SchemaRevVer="04.00.00"/>
+</PropertyDef>
+<PropertyDef>
+  <IObject UID="NamingCriteria" Name="NamingCriteria" Description="NamingCriteria"/>
+  <IPropertyDef/>
+  <ISchemaObj DisplayName="NamingCriteria" SchemaRevVer="04.00.00"/>
+</PropertyDef>
+<PropertyDef>
+  <IObject UID="NamePatternMatch" Name="NamePatternMatch" Description="NamePatternMatch"/>
+  <IPropertyDef/>
+  <ISchemaObj DisplayName="NamePatternMatch" SchemaRevVer="04.00.00"/>
+</PropertyDef>
+<PropertyDef>
+  <IObject UID="NamingFormat" Name="NamingFormat" Description="NamingFormat"/>
+  <IPropertyDef/>
+  <ISchemaObj DisplayName="NamingFormat" SchemaRevVer="04.00.00"/>
+</PropertyDef>
+<PropertyDef>
+  <IObject UID="NamedPropertyDef" Name="NamedPropertyDef" Description="NamedPropertyDef"/>
+  <IPropertyDef/>
+  <ISchemaObj DisplayName="NamedPropertyDef" SchemaRevVer="04.00.00"/>
+</PropertyDef>
+<Rel>
+  <IObject UID="NamingRuleEdgesScopedByString"/>
+  <IRel UID1="NamingRuleEdges" UID2="string" DefUID="ScopedBy" IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamedObjectTypeScopedByString"/>
+  <IRel UID1="NamedObjectType" UID2="string" DefUID="ScopedBy" IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingCriteriaEdgesScopedByString"/>
+  <IRel UID1="NamingCriteria" UID2="string" DefUID="ScopedBy" IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamePatternMatchScopedByString"/>
+  <IRel UID1="NamePatternMatch" UID2="string" DefUID="ScopedBy" IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamingFormatEdgesScopedByString"/>
+  <IRel UID1="NamingFormat" UID2="string" DefUID="ScopedBy" IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="NamedPropertyDefScopedByString"/>
+  <IRel UID1="NamedPropertyDef" UID2="string" DefUID="ScopedBy" IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRuleExposesNamedObjectType"/>
+  <IRel UID1="INamingRule" UID2="NamedObjectType" DefUID="Exposes"  IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRuleExposesNamingCriteria"/>
+  <IRel UID1="INamingRule" UID2="NamingCriteria" DefUID="Exposes"  IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRuleExposesNamePatternMatch"/>
+  <IRel UID1="INamingRule" UID2="NamePatternMatch" DefUID="Exposes"  IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRuleExposesNamingRuleEdges"/>
+  <IRel UID1="INamingRule" UID2="NamingRuleEdges" DefUID="Exposes"  IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRulePropExposesNamedPropertyDef"/>
+  <IRel UID1="INamingRuleProp" UID2="NamedPropertyDef" DefUID="Exposes"  IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="INamingRulePropExposesNamingFormat"/>
+  <IRel UID1="INamingRuleProp" UID2="NamingFormat" DefUID="Exposes" IsRequired="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+ <RelDef>
+  <IObject UID="NamingRuleProps" Name="NamingRuleProps" Description="NamingRuleProperties" />
+  <IRel UID1="INamingRule" UID2="INamingRuleProp"/>
+  <IRelDef Role1="NamingRule" Role1DisplayName="Naming Rule" End1Locality="Container" Min1="1" Max1="1" SpecOfUID="SchemaObjToSchemaObj" Ordering="Ordered12" Min2="0" Max2="*" End2Locality="Container" Role2="NamingRuleProperties" Role2DisplayName="Naming Rule Properties"/>
+  <IRelDef2 FilterEdge12="False" FilterEdge21="False"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</RelDef>
+<ClassDef>
+  <IObject UID="ExpansionRule" Name="ExpansionRule" Description="ExpansionRule"/>
+  <IClassDef/>
+  <ISchemaObj DisplayName="Expanison rule" SchemaRevVer="04.00.00"/>
+</ClassDef>
+<Rel>
+  <IObject UID="GraphTypesInstancesExpansionRule"/>
+  <IRel UID1="GraphTypesFactory" UID2="ExpansionRule" DefUID="Instantiates"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="MetaModel.ExpansionRule"/>
+  <IRel UID1="MetaModel" UID2="ExpansionRule" DefUID="ModelClass"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="MetaSchema.ExpansionRule"/>
+  <IRel UID1="MetaSchema" UID2="ExpansionRule" DefUID="Componentization"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="ExpansionRule.IObject"/>
+  <IRel UID1="ExpansionRule" UID2="IObject" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="ExpansionRule.Realizes.ISchemaObj"/>
+  <IRel UID1="ExpansionRule" UID2="ISchemaObj" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="IExpansionRuleImpliesISchemaObj"/>
+  <IRel UID1="IExpansionRule" UID2="ISchemaObj" DefUID="Implies" IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="IExpansionRuleImpliesIObject"/>
+  <IRel UID1="IExpansionRule" UID2="IObject" DefUID="Implies" IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<InterfaceDef>
+  <IObject UID="IExpansionRule" Name="IExpansionRule" Description="ExpansionRule Interface"/>
+  <IInterfaceDef/>
+  <IInterfaceRole/>
+  <IPropCategory PropCategory="Miscellaneous"/>
+  <IEnumMetadata/>
+  <ISchemaObj DisplayName="expanison rule" SchemaRevVer="04.00.00"/>
+</InterfaceDef>
+<Rel>
+  <IObject UID="ExpansionRule.Primary.IExpansionRule"/>
+  <IRel UID1="ExpansionRule" UID2="IExpansionRule" DefUID="PrimaryInterface"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+<Rel>
+  <IObject UID="ExpansionRule.IExpansionRule"/>
+  <IRel UID1="ExpansionRule" UID2="IExpansionRule" DefUID="Realizes"  IsRequired="True"/>
+  <ISchemaObj SchemaRevVer="04.00.00"/>
+</Rel>
+</Container>

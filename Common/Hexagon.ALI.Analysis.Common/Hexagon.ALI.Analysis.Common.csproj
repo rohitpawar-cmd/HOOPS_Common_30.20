@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputPath></OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>Hexagon.ALI.Analysis.Common</AssemblyName>
+    <RootNamespace>Hexagon.ALI.Analysis.Common</RootNamespace>
+	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Description>Common Data Module for SIO data</Description>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Configurations>Debug;Release;ScanCoverity;Nugets</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Enums\NotYetImplemented\**" />
+    <Compile Remove="Tests\**" />
+    <EmbeddedResource Remove="Enums\NotYetImplemented\**" />
+    <EmbeddedResource Remove="Tests\**" />
+    <None Remove="Enums\NotYetImplemented\**" />
+    <None Remove="Tests\**" />  
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NLog" Version="5.3.4" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\graphics.proto" GrpcServices="Client" />
+  </ItemGroup>
+	<ItemGroup>
+		<InternalsVisibleTo Include="$(AssemblyName).L0.Tests" />
+		<InternalsVisibleTo Include="$(AssemblyName).L1.Tests" />
+		<InternalsVisibleTo Include="$(AssemblyName).L2.Tests" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Hexagon.ALI.Analysis.Common.DTOs\Hexagon.ALI.Analysis.Common.DTOs.csproj" />
+	</ItemGroup>
+</Project>

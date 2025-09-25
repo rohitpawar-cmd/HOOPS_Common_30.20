@@ -1,0 +1,35 @@
+Name,Value
+AnalysisTeeType,1 - Reinforced
+AnalysisTeeType,2 - Unreinforced
+AnalysisTeeType,3 - Welding
+AnalysisTeeType,4 - Sweepolet
+AnalysisTeeType,5 - Weldolet
+AnalysisTeeType,6 - Extruded
+AnalysisTeeType,7 - Butt Weld
+AnalysisTeeType,8 - Socket
+AnalysisTeeType,9 - Socket unfin
+AnalysisTeeType,10 - Tapered
+AnalysisTeeType,11 - Threaded
+AnalysisTeeType,12 - Double Welded
+AnalysisTeeType,13 - Lap Joint
+AnalysisTeeType,14 - Bonney Forge Sweepolet
+AnalysisTeeType,15 - Bonney Forge Latrolet
+AnalysisTeeType,16 - Bonney Forge Ins Weld
+AnalysisTeeType,17 - Full Encirclement
+AnalysisTeeType,1 - Fab w/Pad/Sad
+AnalysisTeeType,2 - Fabricated
+AnalysisTeeType,3 - Forged (BS 1640)
+AnalysisTeeType,4 - Sweepolet
+AnalysisTeeType,5 - Weldolet
+AnalysisTeeType,6 - Drawn/Extruded
+AnalysisTeeType,7 - Butt Weld
+AnalysisTeeType,10 - Wall Thickness Transition
+AnalysisTeeType,17 - Full Encirclement
+AnalysisTeeType,18 - Long Weld Neck Flange
+AnalysisTeeType,19 - Weldoflange
+AnalysisTeeType,1 - Tee
+AnalysisTeeType,2 - Joint
+AnalysisTeeType,3 - Qualified Tee
+AnalysisTeeType,4 - Other
+AnalysisWeldIdentifierType,0 - As-Welded
+AnalysisWeldIdentifierType,1- Ground Flush

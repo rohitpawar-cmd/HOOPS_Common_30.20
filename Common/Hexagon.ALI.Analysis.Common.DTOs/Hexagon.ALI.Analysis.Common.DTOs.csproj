@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<OutputPath></OutputPath>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<AssemblyName>Hexagon.ALI.Analysis.Common.DTOs</AssemblyName>
+	<RootNamespace>Hexagon.ALI.Analysis.Common.DTOs</RootNamespace>
+	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	<Description>Common Data Module for DTO</Description>
+	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	<Platforms>AnyCPU;x64</Platforms>
+	<Configurations>Debug;Release;Nugets;ScanCoverity</Configurations>
+  </PropertyGroup>
+</Project>
